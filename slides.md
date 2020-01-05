@@ -83,15 +83,8 @@ error: undefined method `new_ostruct_member' for #<RevealCK::Config:0x00007fda17
 自分がこのライブラリでやりたかった事って、
 「クオリティ的には30点でも、瞬足でそれなりの形にする」という事だし。
 ---
-To be continued
+このスライドのリポジトリは、  
+[こんな感じ](https://github.com/kakisoft/markdown_slide_revealjs)です。
 ---
-
-
-
-
-
-
-
-
-
+To be continued
 

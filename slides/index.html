@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="en">
+  <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
+    <meta charset="utf-8">
+
+<title>Slides</title>
+
+<meta name="description" content="">
+<meta name="author" content="">
+<meta name="generator" content="reveal-ck 3.9.2">
+
+
+
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+<link rel="stylesheet" href="css/reveal.css">
+<link rel="stylesheet" href="css/theme/black.css" id="theme">
+
+<!-- Code syntax highlighting -->
+<link rel="stylesheet" href="lib/css/zenburn.css">
+
+<link rel="stylesheet" href="css/reveal-ck.css">
+
+
+<!-- Printing and PDF exports -->
+<script>
+  var link = document.createElement( 'link' );
+  link.rel = 'stylesheet';
+  link.type = 'text/css';
+  link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+  document.getElementsByTagName( 'head' )[0].appendChild( link );
+</script>
+
+<!--[if lt IE 9]>
+<script src="lib/js/html5shiv.js"></script>
+<![endif]-->
+
+  </head>
+
+  <body>
+    <div class="reveal">
+  <!-- Any section element inside of this container is displayed as a slide -->
+  <div class="slides">
+    <section>
+
+<h3>マークダウンでスライドを作ろう！</h3>
+<h3>（reveal.js 編）</h3>
+
+</section>
+<section>
+
+<p>こんな感じのスライドが作れます。</p>
+
+</section>
+<section>
+
+<p><a href="https://github.com/hakimel/reveal.js/">reveal.js</a> というライブラリを使っています。</p>
+
+</section>
+<section>
+
+<p>内容は、マークダウンで記述できます。<br>
+（今回は、<a href="http://jedcn.github.io/reveal-ck/">reveal-ck</a> というライブラリを使っています。）</p>
+
+</section>
+<section>
+
+<p>作ったスライドは、Github pagesにて公開する事が可能です。</p>
+
+</section>
+<section>
+
+<p>作り方</p>
+
+</section>
+<section>
+
+<p>reveal-ck をインストール。（要 ruby 2.4.4以上）<br>
+※2020年1月時点</p>
+<pre><code>sudo gem install reveal-ck
+</code></pre>
+
+</section>
+<section>
+
+<p>スライド作成用のディレクトリを作成し、「slides.md」というファイルを作成します。</p>
+
+<pre><code>（例）
+mkdir markdown_slide_revealjs
+cd markdown_slide_revealjs
+touch slides.md
+</code></pre>
+
+</section>
+<section>
+
+<p>slides.md に、スライドの内容を記述します。</p>
+
+<p>（以下、作成例）</p>
+<pre><code>### マークダウンでスライドを作ろう！
+### （reveal.js 編）
+ ---
+こんな感じのスライドが作れます。
+ ---
+[reveal.js](https://github.com/hakimel/reveal.js/) というライブラリを使っています。
+ ---
+内容は、マークダウンで記述できます。
+（今回は、[reveal-ck](http://jedcn.github.io/reveal-ck/) というライブラリを使っています。）
+ ---
+作ったスライドは、Github pagesにて公開する事が可能です。
+ ---
+作り方
+ ---
+（以下略）
+</code></pre>
+<p>「—」が改ページとなります。</p>
+
+</section>
+<section>
+
+<p>スライドの実態を作成するコマンドを実行します。</p>
+<pre><code>reveal-ck generate
+</code></pre>
+
+</section>
+<section>
+
+<p>その後、スライドを表示するコマンドを実行。</p>
+<pre><code>reveal-ck serve
+</code></pre>
+
+</section>
+<section>
+
+<p>こんな感じのスライドが作れます。</p>
+
+</section>
+<section>
+
+<p>slides.md を編集すると、  <br>
+自動で変更内容が反映されます。<br>
+（ホットリロード）</p>
+
+</section>
+<section>
+
+<p>他、色々上手くいってない部分があるけど、  <br>
+続きは明日書く。</p>
+
+</section>
+<section>
+
+<p>具体的には、<br>
+「config.yml」というファイルにコンフィグを記載する事ができるんだけど、そのファイル作って generate を実行するとエラーが出る。</p>
+<pre><code>error: undefined method `new_ostruct_member' for #&lt;RevealCK::Config:0x00007fda1704bf98&gt;
+</code></pre>
+<p>調査は後日。</p>
+
+</section>
+<section>
+
+<p>あと、自分がやってる Github pagesでの公開方法が、ちょっと不恰好。</p>
+
+<p>きっちりやっといた方がいい？  でも、別に今の方法でもいいんじゃね？という考えもよぎる。</p>
+
+<p>自分がこのライブラリでやりたかった事って、<br>
+「クオリティ的には30点でも、瞬足でそれなりの形にする」という事だし。</p>
+
+</section>
+<section>
+
+<p>To be continued</p>
+
+</section>
+
+  </div>
+</div>
+
+<script src="lib/js/head.min.js"></script>
+<script src="js/reveal.js"></script>
+
+
+<script>
+  (function() {
+  function extend( a, b ) {
+    for(var i in b) {
+      a[i] = b[i];
+    }
+  }
+  var baseOptions = {
+    transition: 'default',
+
+    dependencies: [
+      { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+      { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+      { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+      { src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+      { src: 'plugin/zoom-js/zoom.js', async: true },
+      { src: 'plugin/notes/notes.js', async: true }
+    ]
+  };
+
+  
+
+  var configOptions = {"controls":true,"progress":true,"history":true,"center":true}
+  var initializeOptions = {};
+  extend(initializeOptions, baseOptions);
+  extend(initializeOptions, configOptions);
+  Reveal.initialize(initializeOptions);
+})();
+
+</script>
+
+  </body>
+</html>

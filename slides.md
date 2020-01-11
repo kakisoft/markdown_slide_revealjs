@@ -99,7 +99,7 @@ To be continued...
 ・・・という感じで最後まで書こうかと  
 思ったんだけど、  
 
-**[もっとすごいのがあったよ！](https://jyun76.github.io/revealjs-vscode/)**  
+**[もっとすごいのがあったよ！<br>https://jyun76.github.io/revealjs-vscode/](https://jyun76.github.io/revealjs-vscode/)**  
 
 凄いね！　このスライドでやろうと思った事を既に全部やってるよ！  
 　  
@@ -107,7 +107,10 @@ To be continued...
 上記リンクを参照してね！
 ---
 [vscode-reveal](https://marketplace.visualstudio.com/items?itemName=evilz.vscode-reveal) という VS Code のプラグインで  
-実現しています。　　
+実現しているみたいです。  
+
+gem も ruby も不要だよ！  
+実際使ってみたけど、こっちが圧倒的便利だよ！  
 
 詳細は公式サイト（上記リンク）を。
 ---

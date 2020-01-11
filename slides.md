@@ -81,10 +81,24 @@ error: undefined method `new_ostruct_member' for #<RevealCK::Config:0x00007fda17
 きっちりやっといた方がいい？  でも、別に今の方法でもいいんじゃね？という考えもよぎる。  
 
 自分がこのライブラリでやりたかった事って、
-「クオリティ的には30点でも、瞬足でそれなりの形にする」という事だし。
+「クオリティ的には30点でも、瞬速でそれなりの形にする」という事だし。
 ---
 このスライドのリポジトリは、  
 [こんな感じ](https://github.com/kakisoft/markdown_slide_revealjs)です。
 ---
 To be continued
-
+---
+・・・という感じで最後まで書こうかと思ったんだけど、  
+[もっとすごいのがあったよ！](https://jyun76.github.io/revealjs-vscode/)  
+凄いね！　このスライドでやろうと思った事を既に全部やってるよ！  
+もうこれ以上作る意味ないんで、上記 URLを参照してください。
+---
+[vscode-reveal](https://marketplace.visualstudio.com/items?itemName=evilz.vscode-reveal) という VS Code のプラグインで実現しています。　　
+詳細は公式サイト（上記URL）を。
+---
+という事で、  
+「スライドのデザインは置いといて、瞬速でそれなりの形にする」  
+という目的は達成された。  
+他に面白そうなものがあったら触るかも。
+---
+おわり
